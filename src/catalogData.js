@@ -1,7 +1,8 @@
 const catalogData = [
     {
         Title: "CalcularMCD",
-        
+        Description: ""
+
     }
     
 ];

@@ -3,8 +3,14 @@ class CatalogList{
         this.catalogData = data;
     }
     displayCatalogNames() {
-        return this.catalogData.map(catalog => catalog.Title);
+        return this.catalogData.map(catalog => {
+            return {
+                title: catalog.Title,
+                description: catalog.Description
+            };
+        });
     }
+    
 }
 export default CatalogList;
     

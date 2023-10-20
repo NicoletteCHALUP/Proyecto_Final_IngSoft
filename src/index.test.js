@@ -5,10 +5,24 @@ describe("Pruebas de obtención de título de la kata", () => {
   it("Verifica si el campo 'Title' del catálogo es correcto", () => {
     const catalogList = new CatalogList(catalogData); // Pasa el arreglo de datos al constructor
 
-    const titles = catalogList.displayCatalogNames();
+    const catalogItems = catalogList.displayCatalogNames();
 
-    titles.forEach(title => {
-      expect(title).toEqual("CalcularMCD");
+    catalogItems.forEach(item => {
+      expect(item.title).toEqual("CalcularMCD");
     });
   });
 });
+
+describe("Pruebas de obtención de título y descripción de la kata", () => {
+  it("Verifica si el campo 'Title' y 'description' del catálogo esta vacio", () => {
+    const catalogList = new CatalogList(catalogData); // Pasa el arreglo de datos al constructor
+
+    const catalogItems = catalogList.displayCatalogNames();
+
+    catalogItems.forEach(item => {
+      expect(item.title).toEqual("CalcularMCD");
+      expect(item.description).toEqual("");
+    });
+  });
+});
+
