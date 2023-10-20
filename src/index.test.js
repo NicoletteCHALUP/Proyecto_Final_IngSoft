@@ -32,7 +32,8 @@ describe("Pruebas de obtención de título y descripción de la kata", () => {
       const catalogItems = catalogList.displayCatalogNames();
   
       catalogItems.forEach(item => {
-        expect(item.difficulty).toEqual("")
+        expect(item.title).toEqual("CalcularMCD");
+        expect(item.difficulty).toEqual("Facil")
 
         
       });
