@@ -19,6 +19,8 @@ class CatalogList{
             const catalogClone = document.importNode(catalogTemplate.content, true);
 
             catalogClone.querySelector('.Title').textContent = catalog.Title;
+            catalogClone.querySelector('.Description').textContent = catalog.Description;
+            catalogClone.querySelector('.Difficulty').textContent = catalog.Difficulty;
             catalogContainer.appendChild(catalogClone);
         });
     }
