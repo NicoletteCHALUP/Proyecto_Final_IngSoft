@@ -17,6 +17,8 @@ class CatalogList{
     
         this.catalogData.forEach(catalog => {
             const catalogClone = document.importNode(catalogTemplate.content, true);
+
+            catalogClone.querySelector('').textContent = catalog.Title;
             catalogContainer.appendChild(catalogClone);
         });
     }
