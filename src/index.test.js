@@ -11,6 +11,10 @@ describe("Pruebas de obtención de título y descripción de la kata", () => {
     catalogData.forEach((catalog, index) => {
       // Verifica que el título en catalogItems coincida con el título en catalogData
       expect(catalogItems[index].title).toEqual(catalog.Title);
+      // Verifica que la descripción en catalogItems coincida con la descripción en catalogData
+      expect(catalogItems[index].description).toEqual(catalog.Description);
+      // Verifica que la dificultad en catalogItems coincida con la dificultad en catalogData
+      expect(catalogItems[index].difficulty).toEqual(catalog.Difficulty);
     });
   });
 });
