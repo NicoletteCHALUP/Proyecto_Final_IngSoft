@@ -15,6 +15,8 @@ describe("Pruebas de obtención de título y descripción de la kata", () => {
       expect(catalogItems[index].description).toEqual(catalog.Description);
       // Verifica que la dificultad en catalogItems coincida con la dificultad en catalogData
       expect(catalogItems[index].difficulty).toEqual(catalog.Difficulty);
+      //Verifica que la Categoria en catalogItems coincida con la categoria en catalogData
     });
   });
 });
+

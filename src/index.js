@@ -7,7 +7,8 @@ class CatalogList{
             return {
                 title: catalog.Title,
                 description: catalog.Description,
-                difficulty: catalog.Difficulty
+                difficulty: catalog.Difficulty,
+                category: catalog.Category
             };
         });
     }
