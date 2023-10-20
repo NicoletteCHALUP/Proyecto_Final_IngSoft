@@ -8,7 +8,8 @@ class CatalogList{
                 title: catalog.Title,
                 description: catalog.Description,
                 difficulty: catalog.Difficulty,
-                category: catalog.Category
+                category: catalog.Category,
+                type: catalog.Type
             };
         });
     }
