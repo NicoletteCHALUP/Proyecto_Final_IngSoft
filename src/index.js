@@ -23,6 +23,8 @@ class CatalogList{
             catalogClone.querySelector('.Title').textContent = catalog.Title;
             catalogClone.querySelector('.Description').textContent = catalog.Description;
             catalogClone.querySelector('.Difficulty').textContent = catalog.Difficulty;
+            catalogClone.querySelector('.Category').textContent = catalog.Category;
+            catalogClone.querySelector('.Type').textContent = catalog.Type;
             catalogContainer.appendChild(catalogClone);
         });
     }
