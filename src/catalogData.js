@@ -1,6 +1,8 @@
 const catalogData = [
     {
-        Title: ""
+        Title: "CalcularMCD",
+        
     }
+    
 ];
 export default catalogData;
