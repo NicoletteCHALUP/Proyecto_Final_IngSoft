@@ -6,7 +6,8 @@ class CatalogList{
         return this.catalogData.map(catalog => {
             return {
                 title: catalog.Title,
-                description: catalog.Description
+                description: catalog.Description,
+                difficulty: catalog.Difficulty
             };
         });
     }

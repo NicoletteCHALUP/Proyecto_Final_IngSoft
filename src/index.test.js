@@ -20,8 +20,22 @@ describe("Pruebas de obtención de título y descripción de la kata", () => {
     const catalogItems = catalogList.displayCatalogNames();
 
     catalogItems.forEach(item => {
+      expect(item.title).toEqual("CalcularMCD");
       expect(item.description).toEqual("Kata para calcular el Máximo Común Divisor (MCD) de dos números.");
     });
   });
 });
+describe("Pruebas de obtención de título y descripción de la kata", () => {
+    it("Verifica si el campo 'Title' y 'description' del catálogo esta vacio", () => {
+      const catalogList = new CatalogList(catalogData); // Pasa el arreglo de datos al constructor
+  
+      const catalogItems = catalogList.displayCatalogNames();
+  
+      catalogItems.forEach(item => {
+        expect(item.difficulty).toEqual("")
 
+        
+      });
+    });
+  });
+  
