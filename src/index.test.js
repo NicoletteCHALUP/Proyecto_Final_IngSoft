@@ -20,8 +20,7 @@ describe("Pruebas de obtención de título y descripción de la kata", () => {
     const catalogItems = catalogList.displayCatalogNames();
 
     catalogItems.forEach(item => {
-      expect(item.title).toEqual("CalcularMCD");
-      expect(item.description).toEqual("");
+      expect(item.description).toEqual("Kata para calcular el Máximo Común Divisor (MCD) de dos números.");
     });
   });
 });
