@@ -2,10 +2,9 @@ class CatalogList{
     constructor(data) {
         this.catalogData = data;
     }
-    getKataTitle(){
-        return "CalcularMCD";
+    displayCatalogNames() {
+        return this.catalogData.map(catalog => catalog.Title);
     }
-
 }
 export default CatalogList;
     
