@@ -8,17 +8,30 @@
 <body>
     <h1>Lista de Catálogo de Katas</h1>
     <div id="catalog-container">
-        <template id="catalog-template">
-            <div class="catalog-box">
-                <strong class="Title"></strong><br>
-                Descripción: <span class="Description"></span><br>
-                Dificultad: <span class=" Difficulty"></span><br>
-                Categoria: <span class=" Category"></span><br>
-                <span class=" Type"></span><br>
-                
-              </div>
-            </template>
+        <div class="catalog-box">
+            <strong class="Title">Kata 1</strong><br>
+            Descripción: <span class="Description">Descripción de Kata 1</span><br>
+            Dificultad: <span class=" Difficulty">Fácil</span><br>
+            Categoria: <span class=" Category">Matemáticas</span><br>
+            <span class=" Type">Tipo de Kata 1</span><br>
+            <a href="javascript:void(0);" onclick="openDetails('kata1')">Ver detalles</a>
         </div>
-        <script type="module" src="./src/presenter.js"></script>
-    </body>
-    </html>
+        <div class="catalog-box">
+            <strong class="Title">Kata 2</strong><br>
+            Descripción: <span class="Description">Descripción de Kata 2</span><br>
+            Dificultad: <span class=" Difficulty">Intermedio</span><br>
+            Categoria: <span class=" Category">Programación</span><br>
+            <span class=" Type">Tipo de Kata 2</span><br>
+            <a href="javascript:void(0);" onclick="openDetails('kata2')">Ver detalles</a>
+        </div>
+    </div>
+
+    <script>
+        function openDetails(kataId) {
+            // Reemplaza 'kata1' y 'kata2' con los identificadores reales de tus katas
+            const url = `detalles_kata.php?id=${kataId}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
